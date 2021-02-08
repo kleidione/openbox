@@ -38,7 +38,7 @@ pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xrandr alsa alsa-li
 pacman -S --noconfirm openbox obconf polybar hsetroot rofi picom
 
 # Instala aplicações:
-pacman -S --noconfirm wget git curl p7zip file-roller ntfs-3g hdparm cups yad gvfs gvfs-mtp xdg-user-dirs xdg-utils polkit-gnome xfce4-terminal thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman pluma ristretto tumbler xfce4-settings xfce4-power-manager xfce4-screenshooter neofetch figlet cowsay gimp firefox-i18n-pt-br ttf-dejavu ttf-liberation noto-fonts vlc qbittorrent 
+pacman -S --noconfirm wget git curl p7zip file-roller ntfs-3g hdparm cups yad gvfs gvfs-mtp xdg-user-dirs xdg-utils polkit-gnome numlockx xfce4-terminal thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman pluma ristretto tumbler xfce4-settings xfce4-power-manager xfce4-screenshooter neofetch figlet cowsay gimp firefox-i18n-pt-br ttf-dejavu ttf-liberation noto-fonts vlc qbittorrent 
 
 # Instala aplicação oficial telegram:
 wget "https://telegram.org/dl/desktop/linux" -O telegram.tar.xz ; tar Jxf telegram.tar.xz -C /opt/ ; mv /opt/Telegram*/ /opt/telegram ; ln -sf /opt/telegram/Telegram /usr/bin/telegram ; echo -e '[Desktop Entry]\n Version=1.0\n Exec=/opt/telegram/Telegram\n Icon=Telegram\n Type=Application\n Categories=Application;Network;' | tee /usr/share/applications/telegram.desktop
