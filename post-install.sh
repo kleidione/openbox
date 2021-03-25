@@ -28,8 +28,8 @@ clear ; sleep 2
 echo "archlinux" > /etc/hostname
 
 # Instala o Grub:
-echo "Instalando o grub em /mnt/boot..." ; sleep 2
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck ; grub-mkconfig -o /boot/grub/grub.cfg 
+echo "Instalando o grub em /dev/sda..." ; sleep 2
+grub-install --recheck /dev/sda ; grub-mkconfig -o /boot/grub/grub.cfg
 
 # Instala o xorg + extras:
 pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xrandr alsa alsa-lib alsa-utils alsa-oss mesa xf86-video-intel vulkan-intel intel-ucode ttf-dejavu ttf-liberation noto-fonts nerd-fonts-hack
